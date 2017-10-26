@@ -11,14 +11,14 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/muukii/DataSources.git', :tag => s.version.to_s }
 
   s.subspec 'Default' do |cs|
-    # cs.frameworks = 'DataSources/Diff'
-    # cs.dependency 'DataSources/Diff'
-    cs.source_files = ['Sources/Diff/**/*.swift', 'Sources/DataSources/**/*.swift']
+    # cs.frameworks = 'DataSources/ListDiff'
+    # cs.dependency 'DataSources/ListDiff'
+    cs.source_files = ['Sources/ListDiff/**/*.swift', 'Sources/DataSources/**/*.swift']
   end
 
   s.module_name = s.name
   s.default_subspec = 'Default'
   s.requires_arc = true
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   s.ios.frameworks = 'UIKit'
 end
